@@ -1,0 +1,78 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Model files (keep only the finetuned MRI model)
+models/brain_mri_classifica*
+models/brain_mri_transfer*
+models/brain_mri_finetune*
+
+# Data directories (uncomment if you have large datasets)
+# data/
+# datasets/
+# *.pkl
+# *.h5
+# *.hdf5
+
+# Logs and temporary files
+*.log
+logs/
+temp/
+tmp/
+
+# Docker ignore (keep docker files but ignore containers/images)
+# docker-compose.yml (commented out to keep it)
+# Dockerfile (commented out to keep it)
+
+# Large files and binaries
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ML/AI specific
+*.ckpt
+*.pth
+*.pt
+*.model
+!*finetune*.model
+!*finetune*.pth
+!*finetune*.pt
+
+# Weights and biases
+wandb/
+
+# TensorBoard logs
+tensorboard_logs/
+tb_logs/
+
+# Local environment variables
+.env.local
